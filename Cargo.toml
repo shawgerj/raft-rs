@@ -63,3 +63,8 @@ path = "examples/single_mem_node/main.rs"
 [[example]]
 name = "five_mem_node"
 path = "examples/five_mem_node/main.rs"
+
+[patch.crates-io]
+protobuf = { git = "https://github.com/shawgerj/rust-protobuf", branch = "v2.8" }
+protobuf-codegen = { git = "https://github.com/shawgerj/rust-protobuf", branch = "v2.8" }
+protobuf-build = { git = "https://github.com/shawgerj/protobuf-build", branch = "v0.14.1-patched" }
