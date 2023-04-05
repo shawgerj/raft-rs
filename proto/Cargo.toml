@@ -18,10 +18,12 @@ protobuf-codec = ["protobuf-build/protobuf-codec", "bytes"]
 prost-codec = ["protobuf-build/prost-codec", "prost", "lazy_static"]
 
 [build-dependencies]
-protobuf-build = { version = "0.12", default-features = false }
+<<<<<<< HEAD
+protobuf-build = { version = "0.14", default-features = true }
 
 [dependencies]
 bytes = { version = "1", optional = true }
 lazy_static = { version = "1", optional = true }
-prost = { version = "0.7", optional = true }
-protobuf = "2"
+prost = { version = "0.6", optional = true }
+protobuf = { version = "2", features = ["with-bytes"] }
+

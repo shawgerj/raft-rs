@@ -49,6 +49,12 @@ anyhow = "1.0.40"
 datadriven = { path = "datadriven", version = "0.1.0" }
 itertools = "0.10.0"
 
+[patch.crates-io]
+# TODO: remove this when new raft-rs is published.
+protobuf = { git = "https://github.com/shawgerj/rust-protobuf", branch = "v2.8" }
+protobuf-codegen = { git = "https://github.com/shawgerj/rust-protobuf", branch = "v2.8" }
+protobuf-build = { git = "https://github.com/shawgerj/protobuf-build", branch = "v0.14.1-patched" }
+
 [[bench]]
 name = "benches"
 harness = false
